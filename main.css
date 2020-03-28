@@ -214,6 +214,12 @@ nav a:hover {
     background-size: cover;
     
 }
+.social_media_icon_holder a {
+    transition: margin .5s ease-in-out;
+}
+.social_media_icon_holder a:hover{
+    margin-right: 10px;
+}
 @keyframes bellanimation {
     0% {transform: rotate(0)}
     25% {transform: rotate(-10deg)}
