@@ -1,14 +1,18 @@
+:root {
+    --forBlur: calc(100vh - 114px)
+}
 html {
-    font-size: 18px;
+    font-size: 0.93vw;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(exported/homefpage_background.svg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(exported/homefpage_background.png);
+    background-size: 100% auto;
 }
 nav {
-    height: calc(vw/16.8px);
+    height: 5vw;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -56,7 +60,7 @@ nav a {
     justify-content: center;   
 }
 .hero_section_heading {
-    height: 440px;
+    height: 18vw;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -69,7 +73,7 @@ nav a {
     color: #166540;
 }
 .searchbar_container{
-    height: 90px;
+    height: 75px;
     width: 100%;
 }
 .search_bar{
@@ -80,8 +84,8 @@ nav a {
     margin: 0 auto;
 }
 .search_bar input {
-    font-size: 2rem;
-    padding: 0.5em .6em;
+    font-size: 1.5rem;
+    padding: 0.75em .6em;
     margin-left: 50px;
     width: 70%;
     border: none;
@@ -102,10 +106,73 @@ nav a {
     content: " ";
     width: 2px;
     height: 60%;
-    background-color: #aaaaaa;
-    
+    background-color: #aaaaaa;  
     
 }
-.searchbar_search_image_wrapper img {
+.explore_button{
+    margin: 20px auto;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.1rem;
+    padding: 0.5em 2em;
+    background-color: #166540;
+    opacity: 0.87;
+    border-radius: 50px;
+    transition: width .5s ease-in-out;
+}
+.explore_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.1rem;
+}
+.explore_button:hover {
+    width: 150px;
+}
+.social_media_links {
+    position: fixed;
+    height: 110px;
+    width: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+.social_media_icon_holder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_media_links img {
+    padding: 5px;
+}
+.overlay {
+    background-color: black;
+    opacity: 1;
+    z-index: -50;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.blurrred_background{
+    z-index: -100;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;    
+    background-image: url(exported/homefpage_background.png);
+    filter: blur(10px);
+    background-size: cover;
     
 }
