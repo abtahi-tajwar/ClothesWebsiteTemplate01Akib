@@ -1,0 +1,239 @@
+:root {
+    --forBlur: calc(100vh - 114px)
+}
+html {
+    font-size: 0.93vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(exported/homefpage_background.png);
+    background-size: 100% auto;
+}
+nav {
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    opacity: 0.58;
+}
+.logo_icon {
+    height: 100%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+}
+.notf_icon{
+    transform-origin: 50% 0;
+}
+.notf_icon:hover {
+    cursor: pointer;
+    animation: bellanimation 1s ease-in-out forwards;
+}
+.profile_icon {
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+.profile_icon:hover {
+    transform: translateX(5px);
+}
+nav ul {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav li {
+    width: 12%;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+nav li:nth-child(1){
+    animation: navbaritems .5s ease-in-out backwards;   
+}
+nav li:nth-child(2){
+    animation: navbaritems .5s .5s ease-in-out backwards;   
+}
+nav li:nth-child(3){
+    animation: navbaritems .5s .10s ease-in-out backwards;   
+}
+nav li:nth-child(4){
+    animation: navbaritems .5s .15s ease-in-out backwards;   
+}
+nav li:nth-child(5){
+    animation: navbaritems .5s .20s ease-in-out backwards;   
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+}
+nav a:hover {
+    border-bottom: 1px solid white;
+    transition: all 1s ease-in-out;
+}
+.notification_container{
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_container {
+    width: 3%;
+    margin-right: 9%; 
+    display:flex;
+    justify-content: center;   
+}
+.hero_section_heading {
+    height: 18vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.hero_section_heading span {
+    color: #166540;
+    
+}
+.searchbar_container{
+    height: 75px;
+    width: 100%;
+}
+.search_bar{
+    width: 50%;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+.search_bar input {
+    font-size: 1.5rem;
+    padding: 0.75em .6em;
+    margin-left: 50px;
+    width: 70%;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.search_bar input:focus {
+    outline: none;
+    padding-left: 1em;
+}
+.searchbar_search_image_wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.searchbar_search_image_wrapper div{
+    content: " ";
+    width: 2px;
+    height: 60%;
+    background-color: #aaaaaa;  
+    
+}
+.explore_button{
+    margin: 20px auto;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.1rem;
+    padding: 0.5em 2em;
+    background-color: #166540;
+    opacity: 0.87;
+    border-radius: 50px;
+    transition: width .5s ease-in-out;
+}
+.explore_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.1rem;
+}
+.explore_button:hover {
+    width: 150px;
+}
+.social_media_links {
+    position: fixed;
+    height: 110px;
+    width: 40%;
+    transform: translateX(-50%);
+    background-color: black;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+.social_media_icon_holder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.5;
+}
+.social_media_links img {
+    padding: 5px;
+}
+.overlay {
+    background-color: black;
+    opacity: 1;
+    z-index: -50;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.blurrred_background{
+    z-index: -100;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;    
+    background-image: url(exported/homefpage_background.png);
+    filter: blur(10px);
+    background-size: cover;
+    
+}
+.social_media_icon_holder a {
+    transition: margin .5s ease-in-out;
+}
+.social_media_icon_holder a:hover{
+    margin-right: 10px;
+}
+@keyframes bellanimation {
+    0% {transform: rotate(0)}
+    25% {transform: rotate(-10deg)}
+    75% {transform: rotate(20deg)}
+    100% {transform: rotate(10deg)}
+
+}
+@keyframes navbaritems {
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
