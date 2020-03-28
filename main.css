@@ -25,6 +25,20 @@ nav {
     display: flex;
     justify-content: center;
 }
+.notf_icon{
+    transform-origin: 50% 0;
+}
+.notf_icon:hover {
+    cursor: pointer;
+    animation: bellanimation 1s ease-in-out forwards;
+}
+.profile_icon {
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+.profile_icon:hover {
+    transform: translateX(5px);
+}
 nav ul {
     flex: 1;
     list-style: none;
@@ -41,11 +55,32 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
+}
+nav li:nth-child(1){
+    animation: navbaritems .5s ease-in-out backwards;   
+}
+nav li:nth-child(2){
+    animation: navbaritems .5s .5s ease-in-out backwards;   
+}
+nav li:nth-child(3){
+    animation: navbaritems .5s .10s ease-in-out backwards;   
+}
+nav li:nth-child(4){
+    animation: navbaritems .5s .15s ease-in-out backwards;   
+}
+nav li:nth-child(5){
+    animation: navbaritems .5s .20s ease-in-out backwards;   
 }
 nav a {
     text-decoration: none;
     color: white;
+    padding-bottom: 2px;
+}
+nav a:hover {
+    border-bottom: 1px solid white;
+    transition: all 1s ease-in-out;
 }
 .notification_container{
     width: 3%;
@@ -71,6 +106,7 @@ nav a {
 }
 .hero_section_heading span {
     color: #166540;
+    
 }
 .searchbar_container{
     height: 75px;
@@ -152,6 +188,8 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    opacity: 0.5;
 }
 .social_media_links img {
     padding: 5px;
@@ -175,4 +213,21 @@ nav a {
     filter: blur(10px);
     background-size: cover;
     
+}
+@keyframes bellanimation {
+    0% {transform: rotate(0)}
+    25% {transform: rotate(-10deg)}
+    75% {transform: rotate(20deg)}
+    100% {transform: rotate(10deg)}
+
+}
+@keyframes navbaritems {
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
