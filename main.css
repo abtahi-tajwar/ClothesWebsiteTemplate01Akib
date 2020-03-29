@@ -106,6 +106,12 @@ nav a:hover {
 }
 .hero_section_heading span {
     color: #166540;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.25em;
+    line-height: 2em;
     
 }
 .searchbar_container{
