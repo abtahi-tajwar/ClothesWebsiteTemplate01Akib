@@ -87,7 +87,7 @@ nav {
 }
 .content_wrapper {
     flex: 1;
-    width: 65%;
+    width: 75%;
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -99,10 +99,12 @@ nav {
 }
 .women_catagory {
     grid-area: women;
+    position: relative;
     background-image: url(../../exported/women_category.png);
 }
 .men_catagory {
     grid-area: men;
+    position: relative;
     background-image: url(../../exported/men_category.png);
 }
 .children_catagory {
@@ -111,4 +113,63 @@ nav {
 }
 .content {
     background-size: cover;
+}
+.content_holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image: url(../../exported/men_women_catagory_sublayer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: all .7s ease-in-out;
+}
+.content_holder:hover {
+    background-position: 99% 99%;
+    background-size: 400% 400%;
+}
+.content_holder:hover p:nth-child(1){
+    transform: translateX(0px);
+    opacity: 1;
+}
+.content_holder:hover div:nth-child(2){
+    transform: translateX(-50%);
+    opacity: 1;
+}
+.content_holder:hover p:nth-child(3) {
+    left: 50%;
+    transform: translateX(-25%);
+}
+.content_holder p:nth-child(3)
+{
+    position: absolute;
+    bottom: 17%;
+    right: 4%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.content_holder p:nth-child(1){
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 5%;
+    padding-top: 4.5%;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+.content_holder div:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    transform: translateX(30px);
+    opacity: 0;
 }
