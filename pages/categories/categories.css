@@ -126,22 +126,7 @@ nav {
     background-position: 100% 100%;
     transition: all .7s ease-in-out;
 }
-.content_holder:hover {
-    background-position: 99% 99%;
-    background-size: 400% 400%;
-}
-.content_holder:hover p:nth-child(1){
-    transform: translateX(0px);
-    opacity: 1;
-}
-.content_holder:hover div:nth-child(2){
-    transform: translateX(-50%);
-    opacity: 1;
-}
-.content_holder:hover p:nth-child(3) {
-    left: 50%;
-    transform: translateX(-25%);
-}
+
 .content_holder p:nth-child(3)
 {
     position: absolute;
@@ -172,4 +157,34 @@ nav {
     color: white;
     transform: translateX(30px);
     opacity: 0;
+}
+@keyframes contentfText {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
+@keyframes contentmText {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes contentbText {
+    0% {
+        transform: translateX(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
 }
