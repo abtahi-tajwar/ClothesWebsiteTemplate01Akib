@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="categories.css" />
-    <title>Document</title>
+    <title>Categories:A&T Fashions</title>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -19,7 +19,7 @@
     <nav>
         <div class="main_logo"><img src="../../exported/Main_Logo.svg" alt="Main Logo"/></div>
         <ul class="nav_items">
-            <a href=""><li>FEED</li></a>
+            <a href="../feed/feed.html"><li>FEED</li></a>
             <li class="selected">CATAGORY</li>
             <a href=""><li>EXPLORE</li></a>
             <a href=""><li>BLOG</li></a>
@@ -63,8 +63,9 @@
     </div>
     <script>
         $(window).on("load", function() {
-            $(".loader").fadeOut("slow");
-        })
+            window.setTimeout(() => {$(".loader").fadeOut("slow");}, 1500);
+         })
+        
     </script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="feed.css" />
+    <title>Feed:A&T Fashions</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loadingbox">
+            <div class="innerloadingbox"></div>
+        </div>
+    </div>
+    <nav>
+        <div class="main_logo"><img src="../../exported/Main_Logo.svg" alt="Main Logo"/></div>
+        <ul class="nav_items">
+            <li class="selected">FEED</li>
+            <a href="../categories/categories.html"><li>CATAGORY</li></a>
+            <a href=""><li>EXPLORE</li></a>
+            <a href=""><li>BLOG</li></a>
+            <a href=""><li>CONTACT</li></a>
+        </ul>
+        <div class="nav_social_media_icons">
+            <a href=""><img src="../../exported/Instagram_Icon.svg" alt="Instagram Icon"></a>
+            <a href=""><img src="../../exported/Twitter_Icon.svg" alt="Twitter Icon"></a>
+            <a href=""><img src="../../exported/Facebook_Icon.svg" alt="Facebook Icon"></a>
+        </div>
+    </nav>
+    <div class="page_body">
+        <div class="heading">
+            <h1>Feed</h1>
+        </div>
+        <div class="feeds_wrapper">
+            <div class="feed left">
+                <div class="image_wrapper"><img src="../../exported/feed_picture_01.png" alt="Feed profile picture"></div>
+                <div class="feed_text">
+                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
+                </div>
+            </div>
+            <div class="feed right">
+                <div class="image_wrapper"><img src="../../exported/feed_picture_02.png" alt="Feed profile picture"></div>
+                <div class="feed_text">
+                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
+                </div>
+            </div>
+            <div class="feed left">
+                <div class="image_wrapper"><img src="../../exported/feed_picture_03.png" alt="Feed profile picture"></div>
+                <div class="feed_text">
+                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).on("load", function() {
+            window.setTimeout(() => {$(".loader").fadeOut("slow");}, 1500);
+         })
+        
+    </script>
+</body>
+</html>
