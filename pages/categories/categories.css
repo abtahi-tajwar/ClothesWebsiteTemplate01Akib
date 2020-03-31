@@ -6,6 +6,45 @@ html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.loader {
+    background-color: #30302C;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.loadingbox {
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    animation: loadinglayer1 .5s ease-in infinite alternate;
+}
+.innerloadingbox {
+    height: 0%;
+    width: 100%;
+    background-color: white;
+    animation: loadinglayer2 .5s linear infinite alternate;
+}
+@keyframes loadinglayer1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loadinglayer2 {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 100%;
+    }
+}
 body {
     display: flex;
     flex-direction: row;
