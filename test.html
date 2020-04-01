@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-image: url(exported/homefpage_background.png);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        .wrapper{
+            height: 100px;
             width: 100%;
+            display: flex;
         }
-        div{
-            height: 500px;
-            width: 500px;
-            border: 2px solid black;
+        .one{
+            height: 100%;
+            width: 100px;
+            background-color: red;
         }
-        .inside {
-            height: 200%;
-            width: 200%;
-            top: 0;
-            bottom: 0;
-            border: none;
-            position: fixed;
+        .two {
+            height: 100%;
+            width: 80%;
+            margin-left: auto;
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <div>
-        <div class="inside"></div>
+    <div class="wrapper">
+        <div class="one"></div>
+        <div class="two">
+        </div>
     </div>
 </body>
 </html>
