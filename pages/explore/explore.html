@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="feed.css" />
+    <link rel="stylesheet" type="text/css" href="explore.css" />
     <title>Feed:A&T Fashions</title>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -19,9 +19,9 @@
     <nav>
         <div class="main_logo"><a href="../../index.html"><img src="../../exported/Main_Logo.svg" alt="Main Logo"/></a></div>
         <ul class="nav_items">
-            <li class="selected">FEED</li>
+            <a href="../feed/feed.html"><li>FEED</li></a>
             <a href="../categories/categories.html"><li>CATAGORY</li></a>
-            <a href="../explore/explore.html"><li>EXPLORE</li></a>
+            <li class="selected">EXPLORE</li>
             <a href=""><li>BLOG</li></a>
             <a href=""><li>CONTACT</li></a>
         </ul>
@@ -31,31 +31,7 @@
             <a href=""><img src="../../exported/Facebook_Icon.svg" alt="Facebook Icon"></a>
         </div>
     </nav>
-    <div class="page_body">
-        <div class="heading">
-            <h1>Feed</h1>
-        </div>
-        <div class="feeds_wrapper">
-            <div class="feed left">
-                <div class="image_wrapper"><div class="img1"></div></div>
-                <div class="feed_text">
-                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
-                </div>
-            </div>
-            <div class="feed right">
-                <div class="image_wrapper"><div class="img2"></div></div>
-                <div class="feed_text">
-                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
-                </div>
-            </div>
-            <div class="feed left">
-                <div class="image_wrapper"><div class="img3"></div></div>
-                <div class="feed_text">
-                    <p><span>"</span>Shopping disaster comes out now. Confusions and misconception all over the marketplace <span>"</span> </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="page_body"></div>
     <script>
         $(window).on("load", function() {
             window.setTimeout(() => {$(".loader").fadeOut("slow");}, 1500);
