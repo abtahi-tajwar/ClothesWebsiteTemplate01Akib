@@ -124,5 +124,66 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+}
+.heading_section {
+    height: calc(139/1070 * 100%);
+    padding-right: 100px;
+    color: white;
+    font-size: 2.5rem;
+}
+.gallery_caption {
+    padding-top: 1px;
+    width: 90%;
+    height: calc(139/1070 * 100%);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #30302C;
+    border-top-left-radius: 100px;
+}
+.gallery {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "left left mid1 mid2 right right"
+                            "left left mid1 mid2 right right"
+                            "left left mid3 mid4 right right"
+                            "left left mid3 mid4 right right";
+                            
+    flex: 1;
+}
+
+.left_img{
+    background-image: url(../../exported/left_img.png);
+    grid-area: left;
+    background-size: cover;
+}
+.mid_img1 {
+    background-image: url(../../exported/mid_img1.png);
+    grid-area: mid1;
+    background-size: cover;
+}
+.mid_img2 {
+    background-image: url(../../exported/mid_img2.png);
+    grid-area: mid2;
+    background-size: cover;
+}
+.mid_img3 {
+    background-image: url(../../exported/mid_img3.png);
+    grid-area: mid3;
+    background-size: cover;
+}
+.mid_img4 {
+    background-image: url(../../exported/mid_img4.png);
+    grid-area: mid4;
+    background-size: cover;
+}
+.right_img {
+    background-image: url(../../exported/right_img.png);
+    grid-area: right;
+    background-size: cover;
 }
