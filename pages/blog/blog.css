@@ -1,7 +1,10 @@
 
+:root {
+    --picture-box: 80px;
+}
 html {
     font-size: 16px;
-    --picture: 150px;
+   
 }
 * {
     margin: 0;
@@ -148,4 +151,59 @@ nav {
     align-items: center;
     font-size: 4rem;
     font-family: 'Gotu', sans-serif !important;
+}
+.writing_section {
+    font-family: 'Montserrat', sans-serif;
+}
+.blog {
+    display: flex;
+    justify-content: flex-start;
+}
+.image_section {
+    width: var(--picture-box);
+    padding: 5px;
+    padding: 20px;
+}
+.image_holder {
+    width: var(--picture-box);
+    height: var(--picture-box);
+    background-image: url(../../exported/blog_profile_picture.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+.writing_section p:nth-child(1) {
+    padding-top: 15px;
+    font-weight: bolder;
+}
+.tags {
+    font-size: 0.8rem;
+    border: 0.5px solid #1078CB;
+    border-radius: 20px;
+    padding: 1em;
+    margin-right: 5px;
+    margin-top: 10px;
+    float: left;
+}
+.writing_section p:nth-child(7) {
+    padding-top: 2em;
+    line-height: 1.5em;
+}
+.react_button {
+    float: left;
+    padding: 5px;
+}
+.react_number {
+    display: block;
+}
+.react_number {
+    background-color: #FBF8F8;
+    border-radius: 10px;
+    padding: 1em;
+    margin-right: 30px;
+}
+.fa-heart {
+    color: red;
+}
+.fa-commenting {
+    color: blue;
 }
