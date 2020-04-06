@@ -52,7 +52,7 @@ html {
 body {
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../../exported/blog_background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../../exported/contact_background.png);
     background-size: cover;
 }
 nav {
@@ -147,4 +147,55 @@ nav {
     align-items: center;
     font-size: 3rem;
     font-family: 'Gotu', sans-serif !important;
+}
+.rating_section {
+    padding: 50px;
+}
+.rating_holder img {
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+.rating_holder img:hover{
+    transform: scale(1.2);
+}
+.contact_link_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 40%;
+}
+.contact_link_heading p:nth-child(1) {
+    font-size: 3rem;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+.contact_link_heading p:nth-child(2) {
+    font-weight: bold;
+    padding-top: 5px;
+}
+.contact_links_wrapper {
+    margin-top: 30px;
+}
+.contact_links_wrapper div {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.contact_links_wrapper div > img {
+    height: 100%;
+}
+.contact_links_wrapper a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+}
+.contact_links_wrapper a:hover {
+    border-bottom: 1px solid black;
 }
