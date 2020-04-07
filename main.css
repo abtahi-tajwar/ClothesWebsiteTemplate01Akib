@@ -243,3 +243,51 @@ nav a:hover {
         opacity: 1;
     }
 }
+@media (max-width: 680px)
+{
+    body {
+        background: none;
+    }
+    nav {
+        height: 7vw;
+        opacity: 1;
+    }
+    nav ul {
+        display: none;
+    }
+    nav div:nth-child(3) {
+        margin-left: auto;        
+    }
+    nav div:nth-child(3), div:nth-child(4) {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav div:nth-child(3) img {
+        height: 60%;
+    }
+    nav div:nth-child(4) img {
+        height: 60%;
+    }
+    .hero_section_heading {
+        height: 50vw;
+        background-image: url(exported/homefpage_background.png);
+        background-size: cover;
+    }
+    .searchbar_container {
+        margin-top: 100px;
+    }
+    .search_bar{        
+        border: 2px solid gray;
+        box-sizing: border-box;
+    }
+    .search_bar input {
+        background-color: transparent;
+    }
+    .searchbar_search_image_wrapper img {
+        height: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
