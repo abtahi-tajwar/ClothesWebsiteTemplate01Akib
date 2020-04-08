@@ -287,3 +287,26 @@ nav {
 .children_catagory:hover .content_holder_children p {
     padding-top: 80%;
 }
+.responsive_menu {
+    display: none;
+}
+@media only screen and (orientation: portrait)
+{
+    body {
+        background: none;
+    }
+    nav {
+        display: none;
+    }
+    .content_wrapper {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "women"
+        "men"
+        "children";
+    }
+    .content_holder p:nth-child(3) {
+        font-size: 1rem;
+    }
+}

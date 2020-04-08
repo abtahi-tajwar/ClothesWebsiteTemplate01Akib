@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="categories.css" />
+    <link rel="stylesheet" type="text/css" href="../../responsive_menu.css" />
     <title>Categories:A&T Fashions</title>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -61,6 +62,20 @@
             </div>
         </div>
     </div>
+    <div class="responsive_menu">
+        <div class="responsive_menu_visible_portion">
+            <div class="menu_icon"><img src="../../exported/dropDownIcon.svg" alt="Drop Down Icon"></div>
+            <div class="responsive_menu_logo"><img src="../../exported/Main_Logo.svg" alt="Main Logo"></div>
+        </div>
+        <ul>
+            <li><a href="../feed/feed.html">FEED</a></li>
+            <li><a href="../categories/categories.html">CATAGORY</a></li>
+            <li><a href="../explore/explore.html">EXPLORE</a></li>
+            <li><a href="../blog/blog.html">BLOGS</a></li>
+            <li><a href="../contact/contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <script src="../../responsiveMenu.js"></script>
     <script>
         $(window).on("load", function() {
             window.setTimeout(() => {$(".loader").fadeOut("slow");}, 1500);

@@ -11,6 +11,9 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(exported/homefpage_background.png);
     background-size: 100% auto;
 }
+.responsive_menu {
+    display: none;
+}
 nav {
     height: 5vw;
     width: 100%;
