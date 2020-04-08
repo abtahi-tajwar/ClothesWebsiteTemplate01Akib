@@ -199,3 +199,6 @@ nav {
 .contact_links_wrapper a:hover {
     border-bottom: 1px solid black;
 }
+.logo_icon {
+    flex: 1;
+}
