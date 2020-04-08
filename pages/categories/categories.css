@@ -307,6 +307,9 @@ nav {
         "children";
     }
     .content_holder p:nth-child(3) {
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+    .content_holder_children p {
+        font-size: 0.7rem;
     }
 }
