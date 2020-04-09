@@ -1,5 +1,6 @@
 :root {
-    --forBlur: calc(100vh - 114px)
+    --forBlur: calc(100vh - 114px);
+    --navHeight: 7vh;
 }
 html {
     font-size: 0.93vw;
@@ -253,10 +254,11 @@ nav a:hover {
     }
     nav {
         opacity: 1;
-        height: 7vw;
+        height: 7vh;
     }
     .responsive_menu {
-        height: 7vw;
+        display: block;
+        height: var(--navHeight);
         width: 100vw;
         overflow: hidden;
         position: absolute;
@@ -265,7 +267,7 @@ nav a:hover {
         transition: height .5s ease-in-out;      
     }
     .menu_icon {
-        height: 7vw;
+        height: var(--navHeight);
         display: flex;
         align-items: center;
     } 
@@ -286,7 +288,7 @@ nav a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .responsive_menu a {
         text-decoration: none;
@@ -314,12 +316,15 @@ nav a:hover {
         margin-right: 15px;
     }
     .hero_section_heading {
-        height: 50vw;
-        background-image: url(exported/homefpage_background.png);
+        height: 40vh;
+        background-image: url(exported/homefpage_background_concised.png);
         background-size: cover;
     }
     .searchbar_container {
-        margin-top: 100px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .search_bar{        
         border: 2px solid gray;

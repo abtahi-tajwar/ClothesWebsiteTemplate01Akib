@@ -1,3 +1,6 @@
+:root {
+    --navHeight: 7vh;
+}
 .responsive_menu {
     display: none;
 }
@@ -5,7 +8,7 @@
 {
     .responsive_menu {
         display: block;
-        height: 9vw;
+        height: var(--navHeight);
         width: 100vw;
         overflow: hidden;
         position: absolute;
@@ -15,7 +18,7 @@
         background-color: black;    
     }
     .responsive_menu_visible_portion {
-        height: 9vw;
+        height: var(--navHeight);
         display: flex;
     }
     .menu_icon {
