@@ -57,6 +57,7 @@ body {
     background-size: cover;
 }
 nav {
+    display: block;
     width: 18%;
     background-color: #30302C;
     height: 100vh;
@@ -210,4 +211,16 @@ nav {
 }
 .feed_text p span {
     font-size: 1.5em;
+}
+@media only screen and (orientation: portrait)
+{
+    html {
+        --picture: 15vw;
+    }
+    nav {
+        display: none;
+    }
+    .feed_text p{ 
+        font-size: 1rem;
+    }
 }
